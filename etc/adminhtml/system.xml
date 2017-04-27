@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Backend/etc/system_file.xsd">
+    <system>
+      <tab id="setor7_sulution" translate="label" sortOrder="50">
+          <label>Setor7 Sulution</label>
+      </tab>
+      <section id="setor7_oopc" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Open One page Checkout</label>
+          <tab>setor7_sulution</tab>
+          <resource>Setor7_Oopc::system_config</resource>
+
+          <group id="info" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+              <label>Info</label>
+              <field id="version" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                  <label>Version</label>
+                  <frontend_model>Setor7\Oopc\Block\Adminhtml\System\Config\Version</frontend_model>
+              </field>
+          </group>
+          <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+              <label>General Settings</label>
+              <field id="enable_in_frontend" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                  <label>Enable</label>
+                  <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+              </field>
+              <field id="opc_title" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                  <label>Meta Title</label>
+              </field>
+          </group>
+      </section>
+    </system>
+</config>

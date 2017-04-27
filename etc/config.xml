@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <setor7_oopc>
+            <general>
+                <enable_in_frontend>1</enable_in_frontend>
+                <opc_title>Checkout</opc_title>
+            </general>
+        </setor7_oopc>
+    </default>
+</config>
