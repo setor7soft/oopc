@@ -7,20 +7,20 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <css src="setor7_oopc::css/checkout.css"/>
+        <css src="Setor7_Oopc::css/checkout.css"/>
     </head>
     <body>
         <referenceBlock name="checkout.root" >
             <!--<action method="setTemplate" ifconfig="setor7_oopc/general/enable_in_frontend">-->
-                <argument name="template" xsi:type="string">setor7_oopc::onepage.phtml</argument>
+                <argument name="template" xsi:type="string">Setor7_Oopc::onepage.phtml</argument>
             <!--</action>-->
             <arguments>
                 <argument name="jsLayout" xsi:type="array">
                     <item name="components" xsi:type="array">
                         <item name="checkout" xsi:type="array">
-                            <item name="component" xsi:type="string">setor7_oopc/js/view/onepage</item>
+                            <item name="component" xsi:type="string">Setor7_Oopc/js/view/onepage</item>
                             <item name="config" xsi:type="array">
-                                <item name="template" xsi:type="string">setor7_oopc/onepage/3columns</item>
+                                <item name="template" xsi:type="string">Setor7_Oopc/onepage/3columns</item>
                             </item>
                             <item name="children" xsi:type="array">
                                 <item name="steps" xsi:type="array">
@@ -32,7 +32,7 @@
                                       <item name="component" xsi:type="string">uiComponent</item>
                                       <item name="children" xsi:type="array">
                                         <item name="payment" xsi:type="array">
-                                          <item name="component" xsi:type="string">setor7_oopc/js/view/payment</item>
+                                          <item name="component" xsi:type="string">Setor7_Oopc/js/view/payment</item>
                                           <item name="config" xsi:type="array">
                                             <item name="title" xsi:type="string">Payment</item>
                                           </item>
@@ -55,7 +55,7 @@
                                                   <item name="config" xsi:type="array">
                                                       <item name="template" xsi:type="string">Magento_Checkout/payment/before-place-order</item>
                                                   </item>
-                                                  <item name="template" xsi:type="string">setor7_oopc/billing-address</item>
+                                                  <item name="template" xsi:type="string">Setor7_Oopc/billing-address</item>
                                                   <item name="children" xsi:type="array">
                                                     <item name="agreements" xsi:type="array">
                                                       <item name="component" xsi:type="string">Magento_CheckoutAgreements/js/view/checkout-agreements</item>
@@ -176,7 +176,7 @@
                                               </item>
                                             </item>
                                           </item>
-                                          <item name="component" xsi:type="string">setor7_oopc/js/view/shipping</item>
+                                          <item name="component" xsi:type="string">Setor7_Oopc/js/view/shipping</item>
                                           <item name="provider" xsi:type="string">checkoutProvider</item>
                                           <item name="sortOrder" xsi:type="string">1</item>
                                           <item name="children" xsi:type="array">
@@ -255,7 +255,7 @@
                                                         <item name="sortOrder" xsi:type="string">70</item>
                                                     </item>
                                                     <item name="region_id" xsi:type="array">
-                                                        <item name="component" xsi:type="string">setor7_oopc/js/form/element/region</item>
+                                                        <item name="component" xsi:type="string">Setor7_Oopc/js/form/element/region</item>
                                                         <item name="config" xsi:type="array">
                                                             <item name="template" xsi:type="string">ui/form/field</item>
                                                             <item name="elementTmpl" xsi:type="string">ui/form/element/select</item>
@@ -357,10 +357,10 @@
                                             </item>
                                             <item name="children"  xsi:type="array">
                                                 <item name="cart_items" xsi:type="array">
-                                                  <item name="component" xsi:type="string">setor7_oopc/js/view/checkout/summary/cart-items</item>
+                                                  <item name="component" xsi:type="string">Setor7_Oopc/js/view/checkout/summary/cart-items</item>
                                                   <item name="children"  xsi:type="array">
                                                     <item name="details" xsi:type="array">
-                                                      <item name="component" xsi:type="string">setor7_oopc/js/view/checkout/summary/item/details</item>
+                                                      <item name="component" xsi:type="string">Setor7_Oopc/js/view/checkout/summary/item/details</item>
                                                       <item name="children"  xsi:type="array">
                                                         <item name="subtotal" xsi:type="array">
                                                             <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details/subtotal</item>
@@ -456,7 +456,7 @@
                                                     </item>
                                                     <!--
                                                     <item name="setor7_oopc" xsi:type="array">
-                                                      <item name="component" xsi:type="string">setor7_oopc/js/view/checkout/summary/gift-wrap</item>
+                                                      <item name="component" xsi:type="string">Setor7_Oopc/js/view/checkout/summary/gift-wrap</item>
                                                       <item name="sortOrder" xsi:type="string">30</item>
                                                       <item name="label" xsi:type="string">Gift Wrap</item>
                                                     </item>
@@ -502,7 +502,7 @@
                                   <item name="component" xsi:type="string">uiComponent</item>
                                   <item name="children" xsi:type="array">
                                     <item name="gift_message_container" xsi:type="array">
-                                      <item name="component" xsi:type="string">setor7_oopc/js/form/element/gift-messages/container</item>
+                                      <item name="component" xsi:type="string">Setor7_Oopc/js/form/element/gift-messages/container</item>
                                       <item name="config" xsi:type="array">
                                         <item name="popUpForm" xsi:type="array">
                                           <item name="element" xsi:type="string">#amcheckout-gift-messages</item>
@@ -528,7 +528,7 @@
                                       <!--
                                       <item name="children" xsi:type="array">
                                         <item name="checkbox" xsi:type="array">
-                                          <item name="component" xsi:type="string">setor7_oopc/js/form/element/gift-messages/checkbox</item>
+                                          <item name="component" xsi:type="string">Setor7_Oopc/js/form/element/gift-messages/checkbox</item>
                                           <item name="description" xsi:type="string">Add a gift message</item>
                                           <item name="dataScope" xsi:type="string">amcheckout.gift_message</item>
                                           <item name="value" xsi:type="string">1</item>
@@ -553,7 +553,7 @@
                                     </item>
 
                                     <item name="gift_wrap" xsi:type="array">
-                                      <item name="component" xsi:type="string">setor7_oopc/js/form/element/gift-wrap</item>
+                                      <item name="component" xsi:type="string">Setor7_Oopc/js/form/element/gift-wrap</item>
                                       <item name="description" xsi:type="string">Gift wrap $5.00</item>
                                       <item name="dataScope" xsi:type="string">amcheckout.gift_wrap</item>
                                       <item name="value" xsi:type="string">1</item>
@@ -594,8 +594,8 @@
         </referenceBlock>
         <!--<referenceContainer name="before.body.end" as="before_body_end" label="Before Body End" after="-">
             <block class="Magento\GiftMessage\Block\Cart\GiftOptions" name="checkout.cart.order.actions.gift_options" template="cart/gift_options.phtml" cacheable="false"> </block>
-            <block class="IWD\Opc\Block\Account\Forgotpassword" name="forgotPassword" template="setor7_oopc::account/forgotpassword.phtml"> </block>
-            <block class="IWD\Opc\Block\Js\Components" name="jsComponents" template="setor7_oopc::js/components.phtml"> </block>
+            <block class="IWD\Opc\Block\Account\Forgotpassword" name="forgotPassword" template="Setor7_Oopc::account/forgotpassword.phtml"> </block>
+            <block class="IWD\Opc\Block\Js\Components" name="jsComponents" template="Setor7_Oopc::js/components.phtml"> </block>
         </referenceContainer> -->
     </body>
 </page>

@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <head>
-        <css src="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" src_type="url" />
-        <link src="setor7_oopc::js/locked.js"/>
-        <!--<css src="setor7_oopc::css/locked.css"/>-->
-    </head>
-</page>
